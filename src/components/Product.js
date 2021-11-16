@@ -4,12 +4,12 @@ export default function Product(props) {
   const [amount, setAmount] = useState(initialAmount);
   function addItem() {
     setAmount((amount) => amount + 1);
-    console.log(amount);
   }
 
   function subtractItem() {
-    setAmount((amount) => amount - 1);
-    //console.log(amount);
+    if (amount > 0) {
+      setAmount((amount) => amount - 1);
+    }
   }
 
   return (

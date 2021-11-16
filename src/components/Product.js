@@ -1,6 +1,7 @@
 import { useState } from "react";
 export default function Product(props) {
   const initialAmount = 0;
+
   const [amount, setAmount] = useState(initialAmount);
   function addItem() {
     setAmount((amount) => amount + 1);
